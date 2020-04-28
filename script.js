@@ -16,6 +16,7 @@
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var passwordText = document.querySelector("#password");
 
 var lowerCaseArr        = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var upperCaseArr        = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
@@ -58,16 +59,16 @@ function writePassword() {
   }
 // THEN my input should be validated and at least one character type should be selected
 //run a loop on arrays
-for (var i = 0; i < passwordLength.length.; i++) {
+for (var i = 0; i < passwordLength; i++) {
 
-  
+  let combinedArray = parseInt(Math.floor(Math.random(i)*passwordArr.length));
+
+  passwordText.textContent()
 }
-
+//var genrateBtn already exists in the global scope
 
 
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 
 }
