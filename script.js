@@ -21,9 +21,11 @@ var lowerCaseArr        = ['a','b','c','d','e','f','g','h','i','j','k','l','m','
 var upperCaseArr        = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 var numberArr           = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 var specialCharacterArr = ['!','@','#','$','%','^','&','*',';',':','<','>','?','/'];
+//Create an empty password array
+var passwordArr = []
 
 // Write password to the #password input
-//function writePassword() {
+function writePassword() {
 
   // X THEN I am presented with a series of prompts for password criteria - Done
   var upperCasePrompt = confirm("Do you want uppercase characters in your password?");
@@ -35,11 +37,10 @@ var specialCharacterArr = ['!','@','#','$','%','^','&','*',';',':','<','>','?','
   var specialCharPrompt  = confirm("Do you want to include special characters in your password?");
   //console.log(specialCharPrompt)
 
-//X THEN I select which criteria to include in the password
-
-//Create an empty password array
-  var passwordArr = []
-
+  // THEN I choose a length of at least 8 characters and no more than 128 characters
+  let passwordLength = parseInt(prompt("Please choose password length between 8 to 128 Characters!"))
+  //console.log(passwordLength(8))
+  //X THEN I select which criteria to include in the password
   // if (upperCasePrompt === true) || (lowerCasePrompt === true) || (numberPrompt === true) || (specialCharPrompt === true){
   //   passwordArr.push(lowerCaseArr, upperCaseArr, numberArr, specialCharacterArr)
   //   }
@@ -55,8 +56,13 @@ var specialCharacterArr = ['!','@','#','$','%','^','&','*',';',':','<','>','?','
   if (specialCharPrompt = true) {
     passwordArr.push(specialCharacterArr)
   }
-//}
-  // THEN I choose a length of at least 8 characters and no more than 128 characters
+// THEN my input should be validated and at least one character type should be selected
+//run a loop on arrays
+for (var i = 0; i < passwordLength.length.; i++) {
+
+  
+}
+
 
 
   var password = generatePassword();
